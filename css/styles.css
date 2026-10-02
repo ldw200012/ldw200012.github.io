@@ -398,6 +398,14 @@ h3 {
   padding-left: 1.1rem;
 }
 
+.cv-block ul.chips {
+  padding-left: 0;
+}
+
+.cv-block ul.chips li + li {
+  margin-top: 0;
+}
+
 .cv-block li + li {
   margin-top: 0.45rem;
 }
