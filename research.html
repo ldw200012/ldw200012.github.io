@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research | Dongwook Lee</title>
-  <meta name="description" content="Research on underwater SLAM, bathymetric mapping, geomagnetic localization, and marine LiDAR perception.">
+  <meta name="description" content="Research on underwater bathymetric SLAM, geophysical field-based SLAM, and maritime LiDAR perception.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,58 +52,22 @@
       <main id="main" class="main">
         <p class="kicker">Projects</p>
         <h2>Research</h2>
-        <p class="lead">I study how marine robots can localize and map when cameras fade, GPS disappears, and inertial sensors slowly wander. After several years on LiDAR perception, my current focus is SLAM from 2.5D bathymetry, together with geomagnetic mapping and GNSS-denied surface navigation.</p>
+        <p class="lead">I work on localization and mapping for marine robots when GPS is unreliable: bathymetric SLAM, geophysical field maps, and LiDAR perception at the waterfront.</p>
 
         <div class="card-grid">
           <article class="card">
-            <h3>Underwater SLAM and bathymetry</h3>
+            <h3>Underwater Bathymetric SLAM</h3>
             <p>Current work focuses on SLAM from 2.5D bathymetric structure. Seafloor relief is a stable spatial cue for AUVs, and I am interested in representations that stay consistent under sonar noise, sparse coverage, and long-duration drift.</p>
           </article>
           <article class="card">
-            <h3>Geomagnetic mapping for localization</h3>
-            <p>Earth’s magnetic field varies smoothly underwater and can serve as a map when visual landmarks are scarce. I have worked on Gaussian process models of geomagnetic intensity that remain useful even when the vehicle’s inertial navigation is drifting, including spatiotemporal mapping for AUV localization.</p>
+            <h3>Geophysical Field-based SLAM</h3>
+            <p>Earth’s magnetic field varies smoothly underwater and can serve as a map when visual landmarks are scarce. I have worked on Gaussian process models of geomagnetic intensity that remain useful even when inertial navigation is drifting, including spatiotemporal mapping for AUV localization.</p>
           </article>
           <article class="card">
-            <h3>Marine LiDAR perception</h3>
+            <h3>Maritime LiDAR Perception</h3>
             <p>Harbors and waterfronts are cluttered, reflective, and only partly observed. I develop LiDAR methods for marine vessel re-identification, including a branch-augmented network presented at OCEANS 2025, and CALM-Net, shown as a late-breaking poster at IROS 2025 and now under review at <em>IEEE Sensors Journal</em>.</p>
           </article>
-          <article class="card">
-            <h3>GNSS-denied marine navigation</h3>
-            <p>When satellite positioning drops out at sea, surface vehicles still have to navigate and track targets. I contribute to radar-based USV navigation and to collaborative USV–UAV search, including Team KAIST’s MBZIRC 2023 system. Both lines of work are under review at <em>Robotics and Autonomous Systems</em>.</p>
-          </article>
-          <article class="card">
-            <h3>Perception for autonomous surface vessels</h3>
-            <p>Together with colleagues at MORIN, I surveyed maritime perception datasets and sensing technologies for ASVs. The goal is a clearer picture of what current sensors and benchmarks actually cover, and where they fail at sea.</p>
-          </article>
         </div>
-
-        <section class="section" aria-labelledby="systems">
-          <h3 id="systems">Open systems</h3>
-          <div class="pub">
-            <div class="year">ROS</div>
-            <div>
-              <div class="title">BlueROV2 EKF localization</div>
-              <div class="venue">DVL-based extended Kalman filter for real-time position and velocity estimation on a BlueROV2.</div>
-              <div class="pub-links"><a href="https://github.com/ldw200012/BlueROV2-EKF-Localization">GitHub</a></div>
-            </div>
-          </div>
-          <div class="pub">
-            <div class="year">ROS</div>
-            <div>
-              <div class="title">NauticAnnotator</div>
-              <div class="venue">LiDAR and camera annotation pipeline for detecting vessels and building marine perception datasets.</div>
-              <div class="pub-links"><a href="https://github.com/ldw200012/NauticAnnotator">GitHub</a></div>
-            </div>
-          </div>
-          <div class="pub">
-            <div class="year">ROS</div>
-            <div>
-              <div class="title">MapTrack-GPS</div>
-              <div class="venue">Interface for visualizing USV GPS tracks, converting coordinates, and editing waypoints.</div>
-              <div class="pub-links"><a href="https://github.com/ldw200012/MapTrack-GPS">GitHub</a></div>
-            </div>
-          </div>
-        </section>
 
         <p class="site-footer">© 2026 Dongwook Lee. Last updated October 2026.</p>
       </main>
